@@ -21,8 +21,8 @@ If the player selects the wrong color — the game ends.
 ### Clone repository
 
 ```bash
-git clone <https://github.com/yumetsu123/Lab5>
-cd Lab5-main
+git clone <https://github.com/yumetsu123/KOP-Project>
+cd KOP-Project-main
 ```
 
 ### Install dependencies:
