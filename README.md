@@ -58,6 +58,12 @@ Run:
 npm run docs
 ```
 
+The generated documentation will be available in the configured output directory (check your docs config if needed).  
+JSDoc is used to:
+- Document React components
+- Describe props and component behavior
+- Improve code maintainability
+
 ## License
 This project is licensed under the MIT License.
 See the [LICENSE](LICENSE) file for details.

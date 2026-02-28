@@ -42,3 +42,6 @@ coverage/
 
 # OS generated files
 Desktop.ini
+
+*storybook.log
+storybook-static
