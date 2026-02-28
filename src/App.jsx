@@ -3,6 +3,7 @@ import StartPage from "./pages/StartPage.jsx";
 import GamePage from "./pages/GamePage.jsx";
 import SettingsPage from "./pages/SettingsPage.jsx";
 import ResultsTablePage from "./pages/ResultsTablePage.jsx";
+import CookieConsent from "react-cookie-consent";
 
 export default function App() {
     const [page, setPage] = useState("start");
@@ -30,6 +31,21 @@ export default function App() {
                 <GamePage userId={userId} onExit={goToStart} onFinish={goToResults} />
             )}
             {page === "results" && <ResultsTablePage onBack={goToStart} />}
+
+            <CookieConsent
+                location="bottom"
+                buttonText="Accept"
+                declineButtonText="Reject"
+                enableDeclineButton
+                cookieName="simonGameConsent"
+                expires={150}
+                style={{ background: "#1e1e1e" }}
+                buttonStyle={{ background: "green", color: "white" }}
+                declineButtonStyle={{ background: "red", color: "white" }}
+            >
+                This application uses cookies and localStorage to store game progress.
+                No personal data is collected.
+            </CookieConsent>
         </div>
     );
 }
